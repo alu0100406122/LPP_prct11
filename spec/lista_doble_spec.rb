@@ -237,6 +237,14 @@ describe Lista_Doble do
                 expect(@lista1.count).to eq(5)
             end 
             
+            it "Max de la lista..." do
+                expect(@lista1.max).to eq(5)
+            end
+            
+            it "Min de la lista..." do
+                expect(@lista1.min).to eq(1)
+            end
+            
         end
         
     end
