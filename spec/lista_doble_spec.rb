@@ -193,6 +193,10 @@ describe Lista_Doble do
                 expect(@lista1.count).to eq(4)
             end
             
+            it "Max de la lista..." do
+                expect(@lista1.max).to eq(@revista1)
+            end
+            
         end
     end
     
