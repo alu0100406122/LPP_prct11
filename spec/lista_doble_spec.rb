@@ -177,4 +177,24 @@ describe Lista_Doble do
     end
     
     
+     describe "Enumerable" do
+        
+        describe "Expectativas con libros en la Lista." do
+            
+            before :each do
+                @lista1.insertar(@libro1)
+                @lista1.insertar(@libro2)
+                @lista1.insertar(@libro4)
+                @lista1.insertar(@revista1)
+                @lista2 = Lista_Doble.new()
+            end
+            
+            it "Numero de elementos de la lista..." do
+                expect(@lista1.count).to eq(4)
+            end
+            
+        end
+    end
+    
+    
 end
