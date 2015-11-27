@@ -1,9 +1,10 @@
+# encoding: UTF-8
 require 'spec_helper'
 require 'biblio'
 
 describe Lista_Doble do
     before :each do
-
+     
         @libro1 = Libro.new(["Dave Thomas", "Andy Hunt", "Chad Fowler"], "Programming Ruby 1.9 & 2.0: The Pragmatic Programmers Guide. (The Facets of Ruby)", "Pragmatic Bookshelf", "", 4, "(July 7, 2013)", ["ISBN-13: 978-1937785499", "ISBN-10: 1937785491"])
         @libro2 = Libro.new(["Scott Chacon"], "Pro Git 2009th Edition.(Pro)", "Apress", "", 2009, "(August 27, 2009)", ["ISBN-13: 978-1430218333","ISBN-10: 1430218339"])
         @libro3 = Libro.new(["David Flanagan","Yukihiro Matsumoto"],"The Ruby Programming Language.", "O’Reilly Media", "", 1, "(August 27, 2009)",["ISBN-10: 0596516177","ISBN-13: 978-0596516178"])
