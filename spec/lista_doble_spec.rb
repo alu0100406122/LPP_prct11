@@ -217,6 +217,10 @@ describe Lista_Doble do
                 expect(@lista1.drop(2)).to eq([@libro4, @revista1])
             end
             
+            it "Comprobación del método Reject..." do
+                expect(@lista1.reject {|x| x.is_a? Revista}).to eq([@libro1, @libro2, @libro4])
+            end
+            
         end
     end
     
