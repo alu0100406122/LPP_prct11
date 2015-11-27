@@ -197,6 +197,10 @@ describe Lista_Doble do
                 expect(@lista1.max).to eq(@revista1)
             end
             
+            it "Min de la lista..." do
+                expect(@lista1.min).to eq(@libro1)
+            end
+            
         end
     end
     
