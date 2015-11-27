@@ -150,4 +150,14 @@ describe Lista_Doble do
         end
         
     end
+    
+    describe "Comparable" do
+        
+        it "Los autores del @libro1 y @libro2 son distintos..." do
+            expect(@libro1.autor <=> @libro2.autor).to eq(-1)
+        end
+        
+    end
+    
+    
 end

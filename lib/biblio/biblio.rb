@@ -17,4 +17,16 @@ class Bibliografia
       #{@fecha_publicacion}"
   end
   
+  def <=>(other)
+      if ((@autor <=> other.autor)==0)
+          if((@titulo <=> other.titulo)==0)
+            @fecha_publicacion <=> other.fecha_publicacion
+          else
+            @titulo <=> other.titulo
+          end
+      else
+          @autor <=> other.autor
+      end
+  end
+  
 end
