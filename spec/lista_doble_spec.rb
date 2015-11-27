@@ -232,6 +232,11 @@ describe Lista_Doble do
                 @lista1.insertar(4)
                 @lista1.insertar(5)
             end
+            
+            it "Numero de elementos de la lista..." do
+                expect(@lista1.count).to eq(5)
+            end 
+            
         end
         
     end
