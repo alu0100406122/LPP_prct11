@@ -162,6 +162,10 @@ describe Lista_Doble do
             expect(@electronico1.autor == @electronico2.autor).to eq(true)
         end
         
+        it "La fecha de publicacion del @libro2 y @libro3 son iguales..." do
+            expect(@libro2.fecha_publicacion == @libro3.fecha_publicacion).to eq(true)
+        end
+        
     end
     
     
