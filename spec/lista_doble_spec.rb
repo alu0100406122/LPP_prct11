@@ -273,6 +273,10 @@ describe Lista_Doble do
                 expect(@lista1.drop(3)).to eq([4,5])
             end
             
+            it "Comprobación del método sort..." do
+                expect(@lista1.sort {|a,b| b <=> a}).to eq([5,4,3,2,1])
+            end
+            
         end
         
     end
