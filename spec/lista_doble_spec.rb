@@ -249,6 +249,14 @@ describe Lista_Doble do
                 expect(@lista1.reject {|i| i % 3 == 0}).to eq([1,2,4,5])
             end
             
+            it "Comprobación del método all..." do
+                expect(@lista1.all?).to eq(true)
+            end
+            
+            it "Comprobación del método any..." do
+                expect(@lista1.any?).to eq(true)
+            end
+            
         end
         
     end
