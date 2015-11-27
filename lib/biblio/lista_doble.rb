@@ -82,5 +82,13 @@ class Lista_Doble
         end
     end
     
+    def each
+        aux = @inicio
+        while (aux != nil) do
+            yield aux.value
+            aux = aux.next
+        end
+    end
+    
     
 end
