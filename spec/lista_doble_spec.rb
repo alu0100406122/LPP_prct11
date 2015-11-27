@@ -154,8 +154,12 @@ describe Lista_Doble do
     
     describe "Comparable" do
         
+        it "Los @libro1 y @libro2 son distintos..." do
+            expect(@libro1 != @libro2).to eq(true)
+        end
+        
         it "Los autores del @libro1 y @libro2 son distintos..." do
-            expect(@libro1.autor <=> @libro2.autor).to eq(-1)
+            expect(@libro1.autor != @libro2.autor).to eq(true)
         end
         
         it "Los autores de @electronico1 y @electronico2 son iguales..." do
@@ -167,7 +171,7 @@ describe Lista_Doble do
         end
         
         it "El url de @electronico1 y @electronico2 son distintos..." do
-            expect(@electronico1.url <=> @electronico2.url).to eq(-1)
+            expect(@electronico1.url != @electronico2.url).to eq(true)
         end
         
         it "El número de edición del libro3 es menor o igual que el del libro5." do
