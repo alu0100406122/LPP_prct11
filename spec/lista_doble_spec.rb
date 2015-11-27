@@ -205,6 +205,14 @@ describe Lista_Doble do
                 expect(@lista1.member? (@libro1)).to eq(true)
             end
             
+            it "Comprobación del método all..." do
+                expect(@lista1.all?).to eq(true)
+            end
+            
+            it "Comprobación del método any..." do
+                expect(@lista2.any?).to eq(false)
+            end
+            
         end
     end
     
