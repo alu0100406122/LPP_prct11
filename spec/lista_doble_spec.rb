@@ -213,6 +213,10 @@ describe Lista_Doble do
                 expect(@lista2.any?).to eq(false)
             end
             
+            it "Comprobación del método drop..." do
+                expect(@lista1.drop(2)).to eq([@libro4, @revista1])
+            end
+            
         end
     end
     
