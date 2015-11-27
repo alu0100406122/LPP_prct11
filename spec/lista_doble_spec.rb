@@ -265,6 +265,10 @@ describe Lista_Doble do
                 expect(@lista1.collect{|i| i*i}).to eq([1,4,9,16,25])
             end
             
+            it "Comprobación del método map..." do
+                expect(@lista1.map{|i| i*i}).to eq([1,4,9,16,25])
+            end
+            
         end
         
     end
