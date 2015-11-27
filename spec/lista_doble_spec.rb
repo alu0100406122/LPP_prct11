@@ -201,6 +201,10 @@ describe Lista_Doble do
                 expect(@lista1.min).to eq(@libro1)
             end
             
+            it "Objeto miembro del objeto enumerable..." do
+                expect(@lista1.member? (@libro1)).to eq(true)
+            end
+            
         end
     end
     
