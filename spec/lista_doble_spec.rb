@@ -166,6 +166,10 @@ describe Lista_Doble do
             expect(@libro2.fecha_publicacion == @libro3.fecha_publicacion).to eq(true)
         end
         
+        it "El url de @electronico1 y @electronico2 son distintos..." do
+            expect(@electronico1.url <=> @electronico2.url).to eq(-1)
+        end
+        
     end
     
     
