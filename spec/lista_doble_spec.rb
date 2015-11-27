@@ -222,6 +222,18 @@ describe Lista_Doble do
             end
             
         end
+        
+        describe "Expectativas con Números enteros en la Lista." do
+            
+            before :each do
+                @lista1.insertar(1)
+                @lista1.insertar(2)
+                @lista1.insertar(3)
+                @lista1.insertar(4)
+                @lista1.insertar(5)
+            end
+        end
+        
     end
     
     
