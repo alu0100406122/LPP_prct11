@@ -269,6 +269,10 @@ describe Lista_Doble do
                 expect(@lista1.map{|i| i*i}).to eq([1,4,9,16,25])
             end
             
+            it "Comprobación del método drop..." do
+                expect(@lista1.drop(3)).to eq([4,5])
+            end
+            
         end
         
     end
