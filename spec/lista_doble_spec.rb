@@ -18,6 +18,7 @@ describe Lista_Doble do
         @revista1 = Revista.new(["Thomas R."], "Ruby 1.0: Guide.", "Pragmatic Bookshelf", "", 6, "(July 4, 2012)", ["ISSN-13: 95499"])
         
         @electronico1 = Electronico.new(["Dave T."], "Bundler Guide", "www.bundler.com", "(August 2, 2013)")
+        @electronico2 = Electronico.new(["Dave T."], "C&A", "www.bundler.es", "(June 3, 2009)")
         
         @lista1 = Lista_Doble.new()
     end
@@ -155,6 +156,10 @@ describe Lista_Doble do
         
         it "Los autores del @libro1 y @libro2 son distintos..." do
             expect(@libro1.autor <=> @libro2.autor).to eq(-1)
+        end
+        
+        it "Los autores de @electronico1 y @electronico2 son iguales..." do
+            expect(@electronico1.autor == @electronico2.autor).to eq(true)
         end
         
     end
