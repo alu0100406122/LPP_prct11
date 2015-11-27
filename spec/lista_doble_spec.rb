@@ -257,6 +257,14 @@ describe Lista_Doble do
                 expect(@lista1.any?).to eq(true)
             end
             
+            it "Todos los elementos de la lista son mayores que 0..." do
+                expect(@lista1.all? {|x| x>0}).to eq(true)
+            end
+            
+            it "Comprobación del método collect..." do
+                expect(@lista1.collect{|i| i*i}).to eq([1,4,9,16,25])
+            end
+            
         end
         
     end
