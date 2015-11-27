@@ -170,6 +170,10 @@ describe Lista_Doble do
             expect(@electronico1.url <=> @electronico2.url).to eq(-1)
         end
         
+        it "El número de edición del libro3 es menor o igual que el del libro5." do
+            expect(@libro3.numero_edicion <= @libro5.numero_edicion).to eq(true)
+        end
+        
     end
     
     
