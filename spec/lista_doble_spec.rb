@@ -245,6 +245,10 @@ describe Lista_Doble do
                 expect(@lista1.min).to eq(1)
             end
             
+            it "Reject. Elementos de la lista menos los múltiplos de 3..." do
+                expect(@lista1.reject {|i| i % 3 == 0}).to eq([1,2,4,5])
+            end
+            
         end
         
     end
