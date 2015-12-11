@@ -287,5 +287,14 @@ describe Lista_Doble do
     end
     
     
+    describe "Referencias. Clase APM." do
+        before :each do
+            @apa = Apa.new()
+
+            @apa.atributo.insertar(@nodo1)
+            @apa.atributo.insertar(@nodo2)
+        end
+    
+    end
     
 end
