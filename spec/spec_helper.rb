@@ -17,4 +17,5 @@
 # end
 
 require 'coveralls'
+
 Coveralls.wear!
