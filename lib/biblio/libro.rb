@@ -1,3 +1,4 @@
+
 class Libro < Bibliografia
   attr_reader :numero_edicion, :editorial, :serie, :numero_ISBN
   

@@ -1,5 +1,5 @@
 class Lista_Doble
-    
+  
     include Enumerable
     
     attr_reader :inicio
@@ -76,7 +76,7 @@ class Lista_Doble
     
     def to_s()
         aux = @inicio
-        while (aux != nil) do
+        while (aux.next != nil) do
             "#{aux.value}"
             aux = aux.next
         end
@@ -90,5 +90,8 @@ class Lista_Doble
         end
     end
     
-    
+
 end
+
+
+

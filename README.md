@@ -1,6 +1,6 @@
 
-#Práctica 09.
-##Programación Orientada a Objetos. Módulos.
+#Práctica 10.
+##Programación Funcional.
 
 Autor:
 María Nayra Rodríguez Pérez.

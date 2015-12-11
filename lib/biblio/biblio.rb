@@ -28,5 +28,7 @@ class Bibliografia
           @autor <=> other.autor
       end
   end
-  
+
 end
+
+
