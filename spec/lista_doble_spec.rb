@@ -294,6 +294,10 @@ describe Lista_Doble do
             @apa.atributo.insertar(@nodo1)
             @apa.atributo.insertar(@nodo2)
         end
+        
+        it "Objeto de la clase Apm..." do
+            expect(@apa.is_a? Apa).to eq(true)
+        end
     
     end
     
