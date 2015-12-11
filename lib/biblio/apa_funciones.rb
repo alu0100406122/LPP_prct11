@@ -19,9 +19,9 @@ class Apa
         str=""
         proc = proc_from{|array| array.each_with_index do |word,i|
                 if (i+1 == array.size) then
-                    str += array[i].split(" ")[1]+" "+ array[i].split(" ")[0]+" "
+                    str += array[i].split(" ")[1]+" "+ array[i].split(//)[0]+"."+" "
                 else
-                    str += array[i].split(" ")[1]+" "+ array[i].split(" ")[0]+" & "
+                    str += array[i].split(" ")[1]+" "+ array[i].split(//)[0]+"."+" & "
                 end
                 i += 1
             end
@@ -31,7 +31,6 @@ class Apa
     end
     
     def regla_titulo(string)
-        
         str=""
         proc = proc_from {|cadena| cadena.split(" ").each do |i| 
                 str += i.capitalize + " "
@@ -40,16 +39,6 @@ class Apa
         proc.call(string)
         return str
     end 
-    
-    def letra_inicial(string)
-        str=""
-        proc = proc_from{|array| array.each_with_index do |word,i|
-                        str += array[i].split(" ")[1]+" "+ array[i].split(//)[0]+", "
-                    end
-        }
-        proc.call(string)
-        puts str
-    end
     
     def sangria(string)
         puts "\t" << string
