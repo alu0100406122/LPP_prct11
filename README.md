@@ -1,5 +1,5 @@
 
-#Práctica 10.
+#Práctica 10. Lenguajes y Paradigmas de la Programación.
 ##Programación Funcional.
 
 Autor:
