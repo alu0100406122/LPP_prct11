@@ -38,7 +38,7 @@ class Apa
             end
         }
         proc.call(string)
-        puts str
+        return str
     end 
     
     def letra_inicial(string)
@@ -51,17 +51,22 @@ class Apa
         puts str
     end
     
-    def ordenar()
-        "#{@atributo.sort}"
+    def sangria(string)
+        puts "\t" << string
     end
     
     def to_s()
-        ordenar()
+        @atributo.sort
         aux = @atributo.inicio
         while(aux != nil)
             #letra_inicial(aux.value.autor)
             regla_autor(aux.value.autor)
-            regla_titulo(aux.value.titulo)
+            if (aux.value.is_a? Revista) then
+                sangria(regla_titulo(aux.value.titulo))
+            else
+                sangria(aux.value.titulo)
+            end
+            sangria(aux.value.fecha_publicacion)
             aux = aux.next
         end
     end
@@ -72,7 +77,7 @@ libro1 = Libro.new(["Dave Thomas","Scott Chacon", "Chad Fowler"], "programming r
 libro2 = Libro.new(["Hunt Flanagan"], "pro git 2009th edition.", "Apress", "", 2009, "(August 27, 2009)", ["ISBN-13: 978-1430218333","ISBN-10: 1430218339"])
 libro3 = Libro.new(["Andy Aunt"], "pro git 2009th edition.", "Apress", "", 2009, "(August 27, 2009)", ["ISBN-13: 978-1430218333","ISBN-10: 1430218339"])
 
-revista1 = Revista.new(["Thomas R."], "ruby guide.", "Pragmatic Bookshelf", "", 6, "(July 4, 2012)", ["ISSN-13: 95499"])
+revista1 = Revista.new(["Thomas Randal"], "ruby guide.", "Pragmatic Bookshelf", " ", 6, "(July 4, 2012)", ["ISSN-13: 95499"])
 
 nodo1 = Node.new(libro1)
 nodo2 = Node.new(libro2)
