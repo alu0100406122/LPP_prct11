@@ -298,6 +298,8 @@ describe Lista_Doble do
         it "Objeto de la clase Apm..." do
             expect(@apa.is_a? Apa).to eq(true)
         end
+        
+        
     
     end
     
