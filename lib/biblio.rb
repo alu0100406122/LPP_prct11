@@ -12,6 +12,8 @@ require "biblio/libro.rb"
 
 require "biblio/electronico.rb"
 
+require "biblio/apa.rb"
+
 #module Biblio
   # Your code goes here...
 #end

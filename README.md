@@ -47,4 +47,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+
+## Coveralls
+
 [![Coverage Status](https://coveralls.io/repos/alu0100406122/prct10_LPP/badge.svg?branch=master&service=github)](https://coveralls.io/github/alu0100406122/prct10_LPP?branch=master)
