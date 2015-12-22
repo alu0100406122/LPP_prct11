@@ -324,6 +324,11 @@ describe Lista_Doble do
         it "El autor del articulo es: Carlos Ruiz." do
            expect(@articulo1.author).to eq(["Ruiz Carlos"]) 
         end
+        
+        it "La revista del articulo es: The Wall Street Journal." do
+            expect(@articulo1.journal.split(",")[0])==("The Wall Street Journal.") 
+        end
+        
     end    
     
 end
