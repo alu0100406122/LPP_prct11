@@ -1,6 +1,6 @@
 
-#Práctica 10. Lenguajes y Paradigmas de la Programación.
-##Programación Funcional.
+#Práctica 11. Lenguajes y Paradigmas de la Programación.
+##Lenguajes de dominio específico (DSL).
 
 Autor:
 María Nayra Rodríguez Pérez.
