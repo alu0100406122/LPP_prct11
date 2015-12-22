@@ -1,0 +1,24 @@
+Tue, 22 Dec 2015 23:58:18 +0000
+./spec/lista_doble_spec.rb	Tue, 22 Dec 2015 23:54:20 +0000
+./spec/spec_helper.rb	Fri, 11 Dec 2015 12:48:09 +0000
+./CODE_OF_CONDUCT.md	Fri, 27 Nov 2015 09:51:43 +0000
+./README.md	Tue, 22 Dec 2015 22:40:59 +0000
+./biblio.gemspec	Fri, 11 Dec 2015 12:01:48 +0000
+./Guardfile	Fri, 27 Nov 2015 10:01:20 +0000
+./bin/console	Fri, 27 Nov 2015 09:51:43 +0000
+./bin/setup	Fri, 27 Nov 2015 09:51:43 +0000
+./Gemfile.lock	Fri, 11 Dec 2015 12:12:56 +0000
+./Rakefile	Fri, 27 Nov 2015 09:55:15 +0000
+./Gemfile	Fri, 11 Dec 2015 10:32:11 +0000
+./lib/biblio/node.rb	Thu, 19 Nov 2015 18:51:08 +0000
+./lib/biblio/apa.rb	Fri, 18 Dec 2015 13:04:27 +0000
+./lib/biblio/apa_funciones.rb	Fri, 11 Dec 2015 17:49:12 +0000
+./lib/biblio/articulo.rb	Tue, 22 Dec 2015 23:30:50 +0000
+./lib/biblio/electronico.rb	Wed, 25 Nov 2015 17:59:41 +0000
+./lib/biblio/biblio.rb	Thu, 10 Dec 2015 23:16:47 +0000
+./lib/biblio/lista_doble.rb	Fri, 11 Dec 2015 10:11:17 +0000
+./lib/biblio/revista.rb	Wed, 25 Nov 2015 19:20:42 +0000
+./lib/biblio/version.rb	Fri, 27 Nov 2015 09:51:43 +0000
+./lib/biblio/libro.rb	Fri, 11 Dec 2015 09:54:14 +0000
+./lib/biblio.rb	Tue, 22 Dec 2015 22:53:40 +0000
+./LICENSE.txt	Fri, 27 Nov 2015 09:51:43 +0000
