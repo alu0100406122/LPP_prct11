@@ -318,6 +318,10 @@ describe Lista_Doble do
                    :year => "2007"
             end
         end
+        
+        it "Objeto de la clase Articulo" do
+            expect(@articulo1.is_a? Articulo).to eq(true)
+        end
     end    
     
 end
