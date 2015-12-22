@@ -5,5 +5,4 @@ class Apa
     def initialize()
         @atributo = Lista_Doble.new()
     end
-    
 end
