@@ -307,7 +307,7 @@ describe Lista_Doble do
               nombre_autor :surname => "Ruiz",
                            :name => "Carlos"
               journal_ :name => "The Wall Street Journal.",
-                       :volume => "20",
+                       :volume => "2",
                        :issue => "3"
               title_  :name => "La sombra del viento"
               abstract_ :resumen => "El cuento del angel."
@@ -327,6 +327,10 @@ describe Lista_Doble do
         
         it "La revista del articulo es: The Wall Street Journal." do
             expect(@articulo1.journal.split(",")[0])==("The Wall Street Journal.") 
+        end
+        
+        it "El número del volumen del articulo es el 2" do
+           expect(@articulo1.journal.split(",")[1].split(" ")[1]).to eq("2") 
         end
         
     end    
