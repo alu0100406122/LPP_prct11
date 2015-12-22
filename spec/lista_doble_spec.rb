@@ -301,7 +301,7 @@ describe Lista_Doble do
     end
     
     
-    describe "Practica 11 DSL" do
+    describe "Clase Articulo. Citas." do
         before :each do
             @articulo1 = Articulo.new("Articulo 1435N") do 
               nombre_autor :surname => "Ruiz",
