@@ -317,21 +317,25 @@ describe Lista_Doble do
             end
         end
         
-        it "Objeto de la clase Articulo" do
+        it "Objeto de la clase Articulo..." do
             expect(@articulo1.is_a? Articulo).to eq(true)
         end
         
-        it "El autor del articulo es: Carlos Ruiz." do
+        it "El autor del articulo es: Carlos Ruiz..." do
            expect(@articulo1.author).to eq(["Ruiz Carlos"]) 
         end
         
-        it "La revista del articulo es: The Wall Street Journal." do
+        it "La revista del articulo es: The Wall Street Journal..." do
             expect(@articulo1.journal.split(",")[0])==("The Wall Street Journal.") 
         end
         
-        it "El número del volumen del articulo es el 2" do
+        it "El número del volumen del articulo es el 2..." do
            expect(@articulo1.journal.split(",")[1].split(" ")[1]).to eq("2") 
         end
+        
+        it "Comprobación del titulo del articulo, 'La sombra del viento'..." do
+           expect(@articulo1.title)==("La sombra del viento")
+        end 
         
     end    
     
