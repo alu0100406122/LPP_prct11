@@ -304,18 +304,18 @@ describe Lista_Doble do
     describe "Practica 11 DSL" do
         before :each do
             @articulo1 = Articulo.new("Articulo 1435N") do 
-              nombre_autor :surname => "Vazquez",
-                           :name => "Figueroa"
-              nombre_autor :surname => "Mujica",
-                           :name => "Pepe"
-              journal_ :name => "National Geography",
+              nombre_autor :surname => "Ruiz",
+                           :name => "Carlos"
+              nombre_autor :surname => "García",
+                           :name => "Gabriel"
+              journal_ :name => "The Wall Street Journal.",
                        :volume => "20",
                        :issue => "3"
-              title_  :name => "Vida imposible"
-              abstract_ :resumen => "Vida imposible en el fondo marino"
-              date_ :dia => "20",
-                   :mes => "Enero",
-                   :year => "2007"
+              title_  :name => "La sombra del viento"
+              abstract_ :resumen => "El cuento del angel."
+              date_ :dia => "4",
+                   :mes => "Marzo",
+                   :year => "2003"
             end
         end
         
