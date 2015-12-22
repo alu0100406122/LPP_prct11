@@ -306,8 +306,6 @@ describe Lista_Doble do
             @articulo1 = Articulo.new("Articulo 1435N") do 
               nombre_autor :surname => "Ruiz",
                            :name => "Carlos"
-              nombre_autor :surname => "García",
-                           :name => "Gabriel"
               journal_ :name => "The Wall Street Journal.",
                        :volume => "20",
                        :issue => "3"
@@ -321,6 +319,10 @@ describe Lista_Doble do
         
         it "Objeto de la clase Articulo" do
             expect(@articulo1.is_a? Articulo).to eq(true)
+        end
+        
+        it "El autor del articulo es: Carlos Ruiz." do
+           expect(@articulo1.author).to eq(["Ruiz Carlos"]) 
         end
     end    
     
