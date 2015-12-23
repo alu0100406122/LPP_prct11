@@ -337,8 +337,20 @@ describe Lista_Doble do
            expect(@articulo1.title)==("La sombra del viento")
         end 
         
-        it "Existe una fecha de publicación para el articulo." do
+        it "El titulo del articulo tiene 4 palabras" do
+           expect(@articulo1.title.split(" ").count).to eq(4) 
+        end
+        
+        it "Existe una fecha de publicación para el articulo..." do
            expect(@articulo1.date).not_to be nil 
+        end
+        
+        it "El articulo fue publicado en el mes de Marzo" do
+            expect(@articulo1.date.split("/")[1]).to eq("Marzo") 
+        end
+        
+        it "El articulo fue publicado despues del día 2" do
+            expect(@articulo1.date.split("/")[0]).to be > "2" 
         end
         
     end    
