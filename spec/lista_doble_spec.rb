@@ -337,6 +337,10 @@ describe Lista_Doble do
            expect(@articulo1.title)==("La sombra del viento")
         end 
         
+        it "Existe una fecha de publicación para el articulo." do
+           expect(@articulo1.date).not_to be nil 
+        end
+        
     end    
     
 end
